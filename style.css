@@ -1,0 +1,65 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: black;
+  color: white;
+}
+
+#uno{
+  width: 100%;
+  height: 100px;
+  background-color: grey;
+}
+
+#menu{
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: bold;
+  list-style: none;
+}
+
+li:hover{
+  cursor: pointer;
+  color: black;
+}
+
+#burgher{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#menu-phone{
+  display: none;
+  list-style: none;
+  line-height: 2.5em;
+  margin-top: 80px;
+}
+
+#due{
+  width: 200px;
+  height: 100vh;
+  float: right;
+  display: none;
+  text-align: center;
+  background-color: grey;
+}
+
+@media screen and (max-width: 700px) {
+#menu, #uno{
+  display: none;
+}
+
+#burgher{
+  display: block;
+}
+}
